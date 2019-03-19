@@ -1,0 +1,17 @@
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\bin\Debug\netcoreapp2.1\TestingExpenseManagement.deps.json
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\bin\Debug\netcoreapp2.1\TestingExpenseManagement.runtimeconfig.json
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\bin\Debug\netcoreapp2.1\TestingExpenseManagement.runtimeconfig.dev.json
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\bin\Debug\netcoreapp2.1\TestingExpenseManagement.dll
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\bin\Debug\netcoreapp2.1\expenseManagementBackend.dll
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\bin\Debug\netcoreapp2.1\expenseManagementBackend.pdb
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\obj\Debug\netcoreapp2.1\TestingExpenseManagement.csprojAssemblyReference.cache
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\obj\Debug\netcoreapp2.1\TestingExpenseManagement.csproj.CoreCompileInputs.cache
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\obj\Debug\netcoreapp2.1\TestingExpenseManagement.AssemblyInfoInputs.cache
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\obj\Debug\netcoreapp2.1\TestingExpenseManagement.AssemblyInfo.cs
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\obj\Debug\netcoreapp2.1\TestingExpenseManagement.csproj.CopyComplete
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\bin\Debug\netcoreapp2.1\TestingExpenseManagement.pdb
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\obj\Debug\netcoreapp2.1\TestingExpenseManagement.dll
+C:\Users\bharti\source\repos\expenseManagementBackend\TestingExpenseManagement\obj\Debug\netcoreapp2.1\TestingExpenseManagement.pdb
