@@ -63,7 +63,7 @@ namespace expenseManagementBackend.Controllers
             user user = _dataRepository.GetByPrimaryKey(id);
             if(user==null)
             {
-                return NotFound("The user doesno exist.");
+                return NotFound("The user does not exist.");
             }
             _dataRepository.Delete(user);
             return NoContent();

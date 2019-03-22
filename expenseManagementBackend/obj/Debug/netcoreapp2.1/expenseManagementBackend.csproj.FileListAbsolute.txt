@@ -26,3 +26,17 @@ C:\Users\bharti\source\repos\expenseManagementBackend\expenseManagementBackend\o
 C:\Users\bharti\source\repos\expenseManagementBackend\expenseManagementBackend\obj\Debug\netcoreapp2.1\expenseManagementBackend.RazorTargetAssemblyInfo.cache
 C:\Users\bharti\source\repos\expenseManagementBackend\expenseManagementBackend\obj\Debug\netcoreapp2.1\expenseManagementBackend.dll
 C:\Users\bharti\source\repos\expenseManagementBackend\expenseManagementBackend\obj\Debug\netcoreapp2.1\expenseManagementBackend.pdb
+C:\Users\INT110\Desktop\backendExpenseManagement\expenseManagementBackend\bin\Debug\netcoreapp2.1\expenseManagementBackend.deps.json
+C:\Users\INT110\Desktop\backendExpenseManagement\expenseManagementBackend\bin\Debug\netcoreapp2.1\expenseManagementBackend.runtimeconfig.json
+C:\Users\INT110\Desktop\backendExpenseManagement\expenseManagementBackend\bin\Debug\netcoreapp2.1\expenseManagementBackend.runtimeconfig.dev.json
+C:\Users\INT110\Desktop\backendExpenseManagement\expenseManagementBackend\bin\Debug\netcoreapp2.1\expenseManagementBackend.dll
+C:\Users\INT110\Desktop\backendExpenseManagement\expenseManagementBackend\bin\Debug\netcoreapp2.1\expenseManagementBackend.pdb
+C:\Users\INT110\Desktop\backendExpenseManagement\expenseManagementBackend\obj\Debug\netcoreapp2.1\expenseManagementBackend.csprojAssemblyReference.cache
+C:\Users\INT110\Desktop\backendExpenseManagement\expenseManagementBackend\obj\Debug\netcoreapp2.1\expenseManagementBackend.csproj.CoreCompileInputs.cache
+C:\Users\INT110\Desktop\backendExpenseManagement\expenseManagementBackend\obj\Debug\netcoreapp2.1\expenseManagementBackend.RazorAssemblyInfo.cache
+C:\Users\INT110\Desktop\backendExpenseManagement\expenseManagementBackend\obj\Debug\netcoreapp2.1\expenseManagementBackend.RazorAssemblyInfo.cs
+C:\Users\INT110\Desktop\backendExpenseManagement\expenseManagementBackend\obj\Debug\netcoreapp2.1\expenseManagementBackend.AssemblyInfoInputs.cache
+C:\Users\INT110\Desktop\backendExpenseManagement\expenseManagementBackend\obj\Debug\netcoreapp2.1\expenseManagementBackend.AssemblyInfo.cs
+C:\Users\INT110\Desktop\backendExpenseManagement\expenseManagementBackend\obj\Debug\netcoreapp2.1\expenseManagementBackend.RazorTargetAssemblyInfo.cache
+C:\Users\INT110\Desktop\backendExpenseManagement\expenseManagementBackend\obj\Debug\netcoreapp2.1\expenseManagementBackend.dll
+C:\Users\INT110\Desktop\backendExpenseManagement\expenseManagementBackend\obj\Debug\netcoreapp2.1\expenseManagementBackend.pdb
