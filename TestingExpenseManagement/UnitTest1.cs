@@ -11,7 +11,7 @@ namespace TestingExpenseManagement
     public class UnitTest1
     {
         ValuesController _controller;
-        IDataRepository<user> _service;
+        private readonly IDataRepository<user> _service;
        
 
         public UnitTest1()
