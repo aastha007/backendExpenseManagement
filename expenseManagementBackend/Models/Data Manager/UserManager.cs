@@ -23,7 +23,7 @@ namespace expenseManagementBackend.Models.Data_Manager
             return _userContext.user.FirstOrDefault(e => e.User_Id == id);
 
         }
-        public IEnumerable<user> GetByForeignKey(int id)
+        public IEnumerable<user> GetByForeignKey(string id)
         {
             return _userContext.user.ToList();
         }

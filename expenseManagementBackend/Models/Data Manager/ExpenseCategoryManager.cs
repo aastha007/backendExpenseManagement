@@ -22,9 +22,8 @@ namespace expenseManagementBackend.Models.Data_Manager
         public ExpenseCategory GetByPrimaryKey(int id)
         {
             return _ExpenseCategoryContext.ExpenseCategory.FirstOrDefault((e) => e.EC_Id == id);
-
         }
-        public IEnumerable<ExpenseCategory> GetByForeignKey(int id)
+        public IEnumerable<ExpenseCategory> GetByForeignKey(string id)
         {
             return _ExpenseCategoryContext.ExpenseCategory.Where((e) => e.User_Id == id).ToList();
 

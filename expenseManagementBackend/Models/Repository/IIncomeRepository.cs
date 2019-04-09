@@ -10,7 +10,7 @@ namespace expenseManagementBackend.Models.Repository
         {
             IEnumerable<TEntity> GetAll();
             TEntity GetByPrimaryKey(int id);
-             IEnumerable<TEntity> GetByForeignKey(int id);
+             IEnumerable<TEntity> GetByForeignKey(string id);
             void Add(TEntity entity);
             void Update(TEntity dbentity, TEntity entity);
             void Delete(TEntity entity);

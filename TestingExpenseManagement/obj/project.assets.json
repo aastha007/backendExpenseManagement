@@ -5199,6 +5199,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1"
         },
         "compile": {
@@ -14091,23 +14092,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\INT110\\.nuget\\packages\\": {},
+    "C:\\Users\\INT112\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\INT110\\Desktop\\backendExpenseManagement\\TestingExpenseManagement\\TestingExpenseManagement.csproj",
+      "projectUniqueName": "C:\\Users\\INT112\\Desktop\\MyWork\\backendExpenseManagement\\TestingExpenseManagement\\TestingExpenseManagement.csproj",
       "projectName": "TestingExpenseManagement",
-      "projectPath": "C:\\Users\\INT110\\Desktop\\backendExpenseManagement\\TestingExpenseManagement\\TestingExpenseManagement.csproj",
-      "packagesPath": "C:\\Users\\INT110\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\INT110\\Desktop\\backendExpenseManagement\\TestingExpenseManagement\\obj\\",
+      "projectPath": "C:\\Users\\INT112\\Desktop\\MyWork\\backendExpenseManagement\\TestingExpenseManagement\\TestingExpenseManagement.csproj",
+      "packagesPath": "C:\\Users\\INT112\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\INT112\\Desktop\\MyWork\\backendExpenseManagement\\TestingExpenseManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\INT110\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\INT112\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -14120,8 +14121,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\INT110\\Desktop\\backendExpenseManagement\\expenseManagementBackend\\expenseManagementBackend.csproj": {
-              "projectPath": "C:\\Users\\INT110\\Desktop\\backendExpenseManagement\\expenseManagementBackend\\expenseManagementBackend.csproj"
+            "C:\\Users\\INT112\\Desktop\\MyWork\\backendExpenseManagement\\expenseManagementBackend\\expenseManagementBackend.csproj": {
+              "projectPath": "C:\\Users\\INT112\\Desktop\\MyWork\\backendExpenseManagement\\expenseManagementBackend\\expenseManagementBackend.csproj"
             }
           }
         }
@@ -14144,7 +14145,6 @@
             "version": "[15.9.0, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

@@ -12,13 +12,11 @@ namespace expenseManagementBackend.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Income_Id { get; set; }
-        [ForeignKey("user")]
-        public int User_Id { get; set; }
-        public user user { get; set; }
+        //[ForeignKey("user")]
+        //public int User_Id { get; set; }
+        //public user user { get; set; }
 
-        
-       
-        
-        
+        public string User_Id { get; set; }
+
     }
 }

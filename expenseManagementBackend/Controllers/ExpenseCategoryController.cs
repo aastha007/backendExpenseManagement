@@ -26,12 +26,21 @@ namespace expenseManagementBackend.Controllers
             IEnumerable<ExpenseCategory> ExpenseCategory = _dataRepository.GetAll();
             return Ok(ExpenseCategory);
         }
+
         //Get:api/expensecategory/5
         [HttpGet("{id}")]
-        public IActionResult GetExpense([FromRoute] int id)
+        public IActionResult GetExpense([FromRoute] string id)
         {
-           var Obj = _dataRepository.GetByForeignKey(id);
-            return Ok(Obj);
+            IEnumerable<ExpenseCategory> ExpenseCategory = _dataRepository.GetAll();
+            var foundExpense = ExpenseCategory.Where(e => e.User_Id == id);
+
+            if (foundExpense == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(foundExpense);
+
         }
 
 

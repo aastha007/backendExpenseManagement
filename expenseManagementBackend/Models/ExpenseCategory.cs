@@ -19,8 +19,9 @@ namespace expenseManagementBackend.Models
         public int Amount { get; set; }
         public string Description { get; set; }
 
-        [ForeignKey("user")]
-        public int User_Id { get; set; }
-        public user User { get; set; }
+        //[ForeignKey("user")]
+        //public int User_Id { get; set; }
+        //public user User { get; set; }
+        public string User_Id { get; set; }
     }
 }

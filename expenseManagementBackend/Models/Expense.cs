@@ -14,13 +14,10 @@ namespace expenseManagementBackend.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Expense_Id { get; set; }
-        [ForeignKey("user")]
-        public int User_Id { get; set; }
-        public user User { get; set; }
-        
-       
-        
-        
-        
+        //[ForeignKey("user")]
+        //public int User_Id { get; set; }
+        //public user User { get; set; }
+        public string User_Id { get; set; }
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿using expenseManagementBackend.Models;
 using expenseManagementBackend.Models.Repository;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -12,11 +13,13 @@ namespace expenseManagementBackend.Controllers
     [ApiController]
     public class IncomeCategoryController : ControllerBase
     {
+        readonly UserManager<IdentityUser> _userManager;
         private readonly IDataRepository<IncomeCategory> _dataRepository;
 
-        public IncomeCategoryController(IDataRepository<IncomeCategory> dataRepository)
+        public IncomeCategoryController(UserManager<IdentityUser> userManager, IDataRepository<IncomeCategory> dataRepository)
         {
             _dataRepository = dataRepository;
+            _userManager = userManager;
         }
         //GET: api/IncomeCategory
         [HttpGet]
@@ -27,11 +30,22 @@ namespace expenseManagementBackend.Controllers
         }
         //Get:api/incomecategory/5
         [HttpGet("{id}")]
-      public IActionResult GetIncome([FromRoute] int id)
+      public IActionResult GetIncome([FromRoute] string id)
     {
-            var Obj= _dataRepository.GetByForeignKey(id);
-            return Ok(Obj);
-    }
+            //var Obj= _dataRepository.GetByForeignKey(id);
+            //return Ok(Obj);
+            
+            IEnumerable<IncomeCategory> IncomeCategory = _dataRepository.GetAll();
+            var foundIncome = IncomeCategory.Where(e => e.User_Id == id);
+
+            if(foundIncome == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(foundIncome);
+
+        }
     
         //POST: api/IncomeCategory
         [HttpPost]

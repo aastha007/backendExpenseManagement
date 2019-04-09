@@ -40,7 +40,7 @@ namespace expenseManagementBackend.Models.Data_Manager
             return _user;
         }
 
-        public IEnumerable<user> GetByForeignKey(int id)
+        public IEnumerable<user> GetByForeignKey(string id)
         {
             throw new NotImplementedException();
         }

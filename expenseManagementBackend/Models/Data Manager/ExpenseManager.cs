@@ -22,7 +22,7 @@ namespace expenseManagementBackend.Models.Data_Manager
             return _ExpenseContext.Expense.FirstOrDefault(e => e.Expense_Id == id);
 
         }
-        public IEnumerable<Expense> GetByForeignKey(int id)
+        public IEnumerable<Expense> GetByForeignKey(string id)
         {
             return _ExpenseContext.Expense.Where((e) => e.User_Id == id).ToList();
 

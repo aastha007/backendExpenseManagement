@@ -27,7 +27,7 @@ namespace expenseManagementBackend.Models.Data_Manager
 
         }
 
-        public IEnumerable<IncomeCategory> GetByForeignKey(int id)
+        public IEnumerable<IncomeCategory> GetByForeignKey(string id)
         {
             return _IncomeCategoryContext.IncomeCategory.Where((e) => e.User_Id == id).ToList();
 
