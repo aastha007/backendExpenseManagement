@@ -38,14 +38,20 @@ namespace expenseManagementBackend
             services.AddScoped<IDataRepository<ExpenseCategory>, ExpenseCategoryManager>();
             services.AddScoped<IIncomeRepository<Income>, IncomeManager>();
             services.AddScoped<IDataRepository<IncomeCategory>, IncomeCategoryManager>();
-            services.AddCors(options => options.AddPolicy("Cors", builder =>
-             {
-                 builder
-                 .AllowAnyOrigin()
-                 .AllowAnyMethod()
-                 .AllowAnyHeader();
 
-             }));
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("MyPolicy",
+                    builder =>
+                    {
+                        builder
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials();
+                    });
+            });
 
             services.AddDbContext<UserDbContext>(opt => opt.UseSqlServer(Configuration["ConnectionString:DefaultConnection"]));
 
@@ -78,12 +84,15 @@ namespace expenseManagementBackend
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseCors("MyPolicy");
             app.UseAuthentication();
 
             if (env.IsDevelopment())
             {
+                
                 app.UseDeveloperExceptionPage();
-                app.UseCors("Cors");
+                
+
             }
             else
             {

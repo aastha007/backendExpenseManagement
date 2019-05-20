@@ -22,11 +22,14 @@ namespace expenseManagementBackend.Controllers
             _userManager = userManager;
         }
         //GET: api/IncomeCategory
-        [HttpGet]
-        public IActionResult Get()
+        [HttpGet("{from}/{to}")]
+        public IActionResult Get([FromRoute] string from, string to)
         {
             IEnumerable<IncomeCategory> IncomeCategory = _dataRepository.GetAll();
-            return Ok(IncomeCategory);
+
+            IEnumerable<IncomeCategory> res = IncomeCategory.Where((e) => Convert.ToDateTime(e.Date) > Convert.ToDateTime(from) && Convert.ToDateTime(e.Date) < Convert.ToDateTime(to));
+
+            return Ok(res);
         }
         //Get:api/incomecategory/5
         [HttpGet("{id}")]
@@ -43,7 +46,9 @@ namespace expenseManagementBackend.Controllers
                 return BadRequest();
             }
 
-            return Ok(foundIncome);
+            var sumofincome = foundIncome.Sum((e) => e.Amount);
+
+            return Ok(sumofincome);
 
         }
     
@@ -57,7 +62,7 @@ namespace expenseManagementBackend.Controllers
 
             }
             _dataRepository.Add(IncomeCategory);
-            return CreatedAtRoute("Get", new { IncomeCategory_Id = IncomeCategory.IC_Id }, IncomeCategory);
+            return Ok(IncomeCategory);
 
         }
         //PUT :api/IncomeCategory/5

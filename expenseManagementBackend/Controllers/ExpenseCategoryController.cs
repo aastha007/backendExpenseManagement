@@ -1,5 +1,6 @@
 ﻿using expenseManagementBackend.Models;
 using expenseManagementBackend.Models.Repository;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -20,11 +21,14 @@ namespace expenseManagementBackend.Controllers
             _dataRepository = dataRepository;
         }
         //GET: api/ExpenseCategory
-        [HttpGet]
-        public IActionResult Get()
+        [HttpGet("{from}/{to}")]
+        public IActionResult Get([FromRoute] string from, string to)
         {
             IEnumerable<ExpenseCategory> ExpenseCategory = _dataRepository.GetAll();
-            return Ok(ExpenseCategory);
+
+            IEnumerable<ExpenseCategory> res =  ExpenseCategory.Where((e) =>  Convert.ToDateTime(e.Date) > Convert.ToDateTime(from) && Convert.ToDateTime(e.Date) < Convert.ToDateTime(to));
+
+            return Ok(res);
         }
 
         //Get:api/expensecategory/5
@@ -39,7 +43,9 @@ namespace expenseManagementBackend.Controllers
                 return BadRequest();
             }
 
-            return Ok(foundExpense);
+            var sumofexpense = foundExpense.Sum((e) => e.Amount);
+
+            return Ok(sumofexpense);
 
         }
 
@@ -54,7 +60,7 @@ namespace expenseManagementBackend.Controllers
 
             }
             _dataRepository.Add(ExpenseCategory);
-            return CreatedAtRoute("Get", new { ExpenseCategory_Id = ExpenseCategory.EC_Id }, ExpenseCategory);
+            return Ok(ExpenseCategory);
 
         }
         //PUT :api/ExpenseCategory/5
